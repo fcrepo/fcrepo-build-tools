@@ -2,16 +2,15 @@ language: java
 sudo: false
 
 jdk:
-  - oraclejdk8
+  - openjdk11
 
 branches:
   only:
     - master
+    - main
     - /^fcrepo-*/
 
 script:
-  - xmllint --valid --noout src/main/resources/fcrepo-checkstyle/checkstyle.xml
-  - xmllint --valid --noout src/main/resources/fcrepo-checkstyle/checkstyle-suppressions.xml
   - mvn install
   - unzip -d target/zipout target/fcrepo-build-tools-*.jar
   - test "0" == $([ -f target/zipout/fcrepo-checkstyle/checkstyle.xml ] && echo "0" || echo "1")
