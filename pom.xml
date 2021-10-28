@@ -153,7 +153,7 @@
     <license>
       <name>Apache License, Version 2.0</name>
       <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-      <comments>Copyright (c) 2013 DuraSpace</comments>
+      <comments>Copyright (c) 2013-2021 Lyrasis</comments>
     </license>
   </licenses>
   
@@ -173,8 +173,8 @@
       <id>awoods</id>
       <name>Andrew Woods</name>
       <email>awoods @ (domain of organization url)</email>
-      <organization>DuraSpace</organization>
-      <organizationUrl>http://www.duraspace.org/</organizationUrl>
+      <organization>Lyrasis</organization>
+      <organizationUrl>http://www.lyrasis.org/</organizationUrl>
       <roles>
         <role>developer</role>
       </roles>
