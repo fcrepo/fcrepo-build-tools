@@ -10,6 +10,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <sonatype.host>s01.oss.sonatype.org</sonatype.host>
   </properties>
 
   <build>
@@ -151,6 +152,19 @@
       <comments>Copyright (c) 2013-2025 Lyrasis</comments>
     </license>
   </licenses>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>sonatype-nexus-snapshots</id>
+      <name>Sonatype Nexus Shapshots</name>
+      <url>https://${sonatype.host}/content/repositories/snapshots/</url>
+    </snapshotRepository>
+    <repository>
+      <id>sonatype-nexus-staging</id>
+      <url>https://${sonatype.host}/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
+
 
   <developers>
     <developer>
