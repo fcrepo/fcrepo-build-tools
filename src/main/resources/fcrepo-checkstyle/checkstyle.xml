@@ -69,7 +69,7 @@
       <property name="message" value="Javadoc @author tag"/>
     </module>
     <module name="JavadocMethod">
-      <property name="scope" value="public"/>
+      <property name="accessModifiers" value="public"/>
       <property name="allowMissingReturnTag" value="true"/>
       <property name="allowMissingParamTags" value="false"/>
     </module>
