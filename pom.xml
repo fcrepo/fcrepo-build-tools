@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.fcrepo</groupId>
   <artifactId>fcrepo-build-tools</artifactId>
-  <version>7.0.0-alpha</version>
+  <version>7.0.0-alpha1-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <name>fcrepo-build-tools</name>
   <description>A package that contains build tools such as checkstyle rules for org.fcrepo projects</description>
@@ -105,7 +105,7 @@
     <developerConnection>scm:git:git@github.com:fcrepo/fcrepo-build-tools.git
     </developerConnection>
     <url>https://github.com/fcrepo/fcrepo-build-tools</url>
-    <tag>7.0.0-alpha</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <prerequisites>
