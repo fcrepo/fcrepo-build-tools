@@ -5,6 +5,7 @@
   <version>7.0.0-alpha1-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <name>fcrepo-build-tools</name>
+  <url>https://github.com/fcrepo/fcrepo-build-tools</url>
   <description>A package that contains build tools such as checkstyle rules for org.fcrepo projects</description>
 
   <properties>
@@ -95,7 +96,37 @@
         <artifactId>maven-bundle-plugin</artifactId>
         <version>6.0.0</version>
         <extensions>true</extensions>
+        </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <version>3.2.7</version>
+        <executions>
+          <execution>
+            <id>sign-artifacts</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>sign</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
+
+      <plugin>
+        <groupId>org.sonatype.central</groupId>
+        <artifactId>central-publishing-maven-plugin</artifactId>
+        <version>0.9.0</version>
+        <extensions>true</extensions>
+        <configuration>
+          <publishingServerId>central</publishingServerId>
+          <!-- Optional:
+          <autoPublish>false</autoPublish>
+          <waitUntil>validated</waitUntil>
+          -->
+        </configuration>
+      </plugin>
+
     </plugins>
   </build>
 
