@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.fcrepo</groupId>
   <artifactId>fcrepo-build-tools</artifactId>
-  <version>7.0.0-alpha1-SNAPSHOT</version>
+  <version>7.1.0-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <name>fcrepo-build-tools</name>
   <url>https://github.com/fcrepo/fcrepo-build-tools</url>
@@ -96,21 +96,6 @@
         <artifactId>maven-bundle-plugin</artifactId>
         <version>6.0.0</version>
         <extensions>true</extensions>
-        </plugin>
-
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-gpg-plugin</artifactId>
-        <version>3.2.7</version>
-        <executions>
-          <execution>
-            <id>sign-artifacts</id>
-            <phase>verify</phase>
-            <goals>
-              <goal>sign</goal>
-            </goals>
-          </execution>
-        </executions>
       </plugin>
 
       <plugin>
@@ -182,21 +167,6 @@
       <comments>Copyright (c) 2013-2025 Lyrasis</comments>
     </license>
   </licenses>
-
-  <distributionManagement>
-
-    <snapshotRepository>
-      <id>sonatype-nexus-snapshots</id>
-      <name>Sonatype Nexus Shapshots</name>
-      <url>https://central.sonatype.com/repository/maven-snapshots/</url>
-    </snapshotRepository>
-    <repository>
-      <id>sonatype-nexus-staging</id>
-      <url>https://ossrh-staging-api.central.sonatype.com/service/local/staging/deploy/maven2/</url>
-    </repository>
- 
-  </distributionManagement>
-
 
   <developers>
     <developer>
