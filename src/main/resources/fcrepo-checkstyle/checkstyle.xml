@@ -50,23 +50,15 @@
     <module name="AvoidStarImport"/>
     <!-- Write Javadocs for public methods and classes. Keep it short and to the point
          /**
-          * @author Joe Developer
-          * @date MMM DD, YYYY
+          * Short description of the class.
           */
          public class MyClass
     -->
     <module name="JavadocType">
       <property name="scope" value="public"/>
       <property name="excludeScope" value="anoninner"/>
-      <!-- Contrary to expectation only checks for author tags without an author -->
-      <property name="authorFormat" value="\S"/>
       <property name="allowUnknownTags" value="true"/>
       <property name="allowMissingParamTags" value="false"/>
-    </module>
-    <!-- Ensure files have the Javadoc @author tag -->
-    <module name="Regexp">
-      <property name="format" value=" \* \@author "/>
-      <property name="message" value="Javadoc @author tag"/>
     </module>
     <module name="JavadocMethod">
       <property name="accessModifiers" value="public"/>
